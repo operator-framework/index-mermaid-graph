@@ -1,0 +1,553 @@
+apicast-operator|threescale-2.8|apicast-operator.v0.2.4|0|0.2.4||apicast-operator.v0.2.3
+apicast-operator|threescale-2.8|apicast-operator.v0.2.3|1|0.2.3||apicast-operator.v0.2.2
+apicast-operator|threescale-2.8|apicast-operator.v0.2.2|2|0.2.2||apicast-operator.v0.2.1
+apicast-operator|threescale-2.8|apicast-operator.v0.2.1|3|0.2.1||apicast-operator.v0.2.0
+apicast-operator|threescale-2.8|apicast-operator.v0.2.0|4|0.2.0||
+apicast-operator|threescale-2.9|apicast-operator.v0.3.1|0|0.3.1||apicast-operator.v0.3.0
+apicast-operator|threescale-2.9|apicast-operator.v0.3.0|1|0.3.0||apicast-operator.v0.2.4
+apicast-operator|threescale-2.9|apicast-operator.v0.2.4|2|0.2.4||apicast-operator.v0.2.3
+apicast-operator|threescale-2.9|apicast-operator.v0.2.3|3|0.2.3||apicast-operator.v0.2.2
+apicast-operator|threescale-2.9|apicast-operator.v0.2.2|4|0.2.2||apicast-operator.v0.2.1
+apicast-operator|threescale-2.9|apicast-operator.v0.2.1|5|0.2.1||apicast-operator.v0.2.0
+apicast-operator|threescale-2.9|apicast-operator.v0.2.0|6|0.2.0||
+awx-resource-operator|release-0.1|awx-resource-operator.v0.1.0|0|0.1.0||
+web-terminal|alpha|web-terminal.v1.1.0|0|1.1.0||web-terminal.v1.0.1
+web-terminal|alpha|web-terminal.v1.0.1|1|1.0.1||
+fuse-online|fuse-online-7.7.x|fuse-online-operator.v7.7.1|0|7.7.1|>=7.7.0 <7.7.1|
+fuse-online|fuse-online-v7.8.x|fuse-online-operator.v7.8.0|0|7.8.0|>=7.7.0 <7.8.0|
+fuse-apicurito|fuse-apicurito-7.7.x|apicuritooperator.v7.7.1|0|7.7.1|>=7.7.0 <7.7.1|
+fuse-apicurito|fuse-apicurito-7.8.x|fuse-apicurito.v7.8.0|0|7.8.0|>=7.7.0 <7.8.0|
+rh-service-binding-operator|beta|service-binding-operator.v0.4.0|0|0.4.0||service-binding-operator.v0.3.0
+rh-service-binding-operator|beta|service-binding-operator.v0.3.0|1|0.3.0||
+rh-service-binding-operator|preview|service-binding-operator.v0.4.0|0|0.4.0||service-binding-operator.v0.3.0
+rh-service-binding-operator|preview|service-binding-operator.v0.3.0|1|0.3.0||
+fuse-console|fuse-console-7.7.x|fuse-console.v7.7.1|0|7.7.1|>=7.7.0 <7.7.1|
+fuse-console|fuse-console-7.8.x|fuse-console.v7.8.1|0|7.8.1|>=7.7.0 <7.8.1|
+3scale-operator|threescale-2.7|3scale-operator.v0.4.2|0|0.4.2||3scale-operator.v0.4.1
+3scale-operator|threescale-2.7|3scale-operator.v0.4.1|1|0.4.1||3scale-operator.v0.4.0
+3scale-operator|threescale-2.7|3scale-operator.v0.4.0|2|0.4.0||3scale-operator.v0.3.0
+3scale-operator|threescale-2.7|3scale-operator.v0.3.0|3|0.3.0||
+3scale-operator|threescale-2.8|3scale-operator.v0.5.5|0|0.5.5||3scale-operator.v0.5.4
+3scale-operator|threescale-2.8|3scale-operator.v0.5.4|1|0.5.4||3scale-operator.v0.5.3
+3scale-operator|threescale-2.8|3scale-operator.v0.5.3|2|0.5.3||3scale-operator.v0.5.2
+3scale-operator|threescale-2.8|3scale-operator.v0.5.2|3|0.5.2||3scale-operator.v0.5.1
+3scale-operator|threescale-2.8|3scale-operator.v0.5.1|4|0.5.1||3scale-operator.v0.5.0
+3scale-operator|threescale-2.8|3scale-operator.v0.5.0|5|0.5.0||3scale-operator.v0.4.2
+3scale-operator|threescale-2.8|3scale-operator.v0.4.2|6|0.4.2||3scale-operator.v0.4.1
+3scale-operator|threescale-2.8|3scale-operator.v0.4.1|7|0.4.1||3scale-operator.v0.4.0
+3scale-operator|threescale-2.8|3scale-operator.v0.4.0|8|0.4.0||3scale-operator.v0.3.0
+3scale-operator|threescale-2.8|3scale-operator.v0.3.0|9|0.3.0||
+3scale-operator|threescale-2.9|3scale-operator.v0.6.1|0|0.6.1||3scale-operator.v0.6.0
+3scale-operator|threescale-2.9|3scale-operator.v0.6.0|1|0.6.0||3scale-operator.v0.5.5
+3scale-operator|threescale-2.9|3scale-operator.v0.5.5|2|0.5.5||3scale-operator.v0.5.4
+3scale-operator|threescale-2.9|3scale-operator.v0.5.4|3|0.5.4||3scale-operator.v0.5.3
+3scale-operator|threescale-2.9|3scale-operator.v0.5.3|4|0.5.3||3scale-operator.v0.5.2
+3scale-operator|threescale-2.9|3scale-operator.v0.5.2|5|0.5.2||3scale-operator.v0.5.1
+3scale-operator|threescale-2.9|3scale-operator.v0.5.1|6|0.5.1||3scale-operator.v0.5.0
+3scale-operator|threescale-2.9|3scale-operator.v0.5.0|7|0.5.0||3scale-operator.v0.4.2
+3scale-operator|threescale-2.9|3scale-operator.v0.4.2|8|0.4.2||3scale-operator.v0.4.1
+3scale-operator|threescale-2.9|3scale-operator.v0.4.1|9|0.4.1||3scale-operator.v0.4.0
+3scale-operator|threescale-2.9|3scale-operator.v0.4.0|10|0.4.0||3scale-operator.v0.3.0
+3scale-operator|threescale-2.9|3scale-operator.v0.3.0|11|0.3.0||
+3scale-operator|threescale-2.6|3scale-operator.v0.3.0|0|0.3.0||
+service-registry-operator|serviceregistry-1.0|service-registry-operator.v1.0.2|0|1.0.2||service-registry-operator.v1.0.1
+service-registry-operator|serviceregistry-1.0|service-registry-operator.v1.0.1|1|1.0.1||service-registry-operator.v1.0.0
+service-registry-operator|serviceregistry-1.0|service-registry-operator.v1.0.0|2|1.0.0||
+service-registry-operator|serviceregistry-1.1|service-registry-operator.v1.1.1|0|1.1.1||service-registry-operator.v1.1.0
+service-registry-operator|serviceregistry-1.1|service-registry-operator.v1.1.0|1|1.1.0||service-registry-operator.v1.0.2
+service-registry-operator|serviceregistry-1.1|service-registry-operator.v1.0.2|2|1.0.2||service-registry-operator.v1.0.1
+service-registry-operator|serviceregistry-1.1|service-registry-operator.v1.0.1|3|1.0.1||service-registry-operator.v1.0.0
+service-registry-operator|serviceregistry-1.1|service-registry-operator.v1.0.0|4|1.0.0||
+service-registry-operator|serviceregistry-1|service-registry-operator.v1.1.1|0|1.1.1||service-registry-operator.v1.1.0
+service-registry-operator|serviceregistry-1|service-registry-operator.v1.1.0|1|1.1.0||service-registry-operator.v1.0.2
+service-registry-operator|serviceregistry-1|service-registry-operator.v1.0.2|2|1.0.2||service-registry-operator.v1.0.1
+service-registry-operator|serviceregistry-1|service-registry-operator.v1.0.1|3|1.0.1||service-registry-operator.v1.0.0
+service-registry-operator|serviceregistry-1|service-registry-operator.v1.0.0|4|1.0.0||
+amq-online|stable|amq-online.1.6.2|0|1.6.2|>=1.5.4 <1.6.0|amq-online.1.6.1
+amq-online|stable|amq-online.1.5.0|1|1.5.0||
+amq-online|stable|amq-online.1.6.2|1|1.6.2|>=1.5.4 <1.6.0|amq-online.1.5.0
+amq-online|stable|amq-online.1.6.1|2|1.6.1|>=1.5.4 <1.6.0|amq-online.1.5.3
+amq-online|stable|amq-online.1.5.0|3|1.5.0||
+amq-online|stable|amq-online.1.6.1|3|1.6.1|>=1.5.4 <1.6.0|amq-online.1.5.0
+amq-online|stable|amq-online.1.5.3|4|1.5.3||amq-online.1.5.2
+amq-online|stable|amq-online.1.5.0|5|1.5.0||
+amq-online|stable|amq-online.1.5.3|5|1.5.3||amq-online.1.5.0
+amq-online|stable|amq-online.1.5.2|6|1.5.2||amq-online.1.5.1
+amq-online|stable|amq-online.1.5.0|7|1.5.0||
+amq-online|stable|amq-online.1.5.2|7|1.5.2||amq-online.1.5.0
+amq-online|stable|amq-online.1.5.1|8|1.5.1||amq-online.1.4.4
+amq-online|stable|amq-online.1.5.0|9|1.5.0||
+amq-online|stable|amq-online.1.5.1|9|1.5.1||amq-online.1.5.0
+amq-online|stable|amq-online.1.4.4|10|1.4.4||amq-online.1.4.2
+amq-online|stable|amq-online.1.4.2|11|1.4.2||amq-online.1.4.1
+amq-online|stable|amq-online.1.4.1|12|1.4.1||amq-online.1.4.0
+amq-online|stable|amq-online.1.4.0|13|1.4.0||
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.5.3|0|2.5.3||kubevirt-hyperconverged-operator.v2.5.2
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.5.2|1|2.5.2|>=2.4.4 <2.5.0|kubevirt-hyperconverged-operator.v2.5.1
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.5.1|2|2.5.1||kubevirt-hyperconverged-operator.v2.5.0
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.5.0|3|2.5.0||kubevirt-hyperconverged-operator.v2.4.3
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.4.3|4|2.4.3||kubevirt-hyperconverged-operator.v2.4.2
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.4.2|5|2.4.2||kubevirt-hyperconverged-operator.v2.4.1
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.4.1|6|2.4.1||kubevirt-hyperconverged-operator.v2.4.0
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.4.0|7|2.4.0||kubevirt-hyperconverged-operator.v2.3.0
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.3.0|8|2.3.0||kubevirt-hyperconverged-operator.v2.2.0
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.2.0|9|2.2.0||kubevirt-hyperconverged-operator.v2.1.0
+kubevirt-hyperconverged|stable|kubevirt-hyperconverged-operator.v2.1.0|10|2.1.0||
+kubevirt-hyperconverged|2.1|kubevirt-hyperconverged-operator.v2.1.0|0|2.1.0||
+kubevirt-hyperconverged|2.2|kubevirt-hyperconverged-operator.v2.2.0|0|2.2.0||kubevirt-hyperconverged-operator.v2.1.0
+kubevirt-hyperconverged|2.2|kubevirt-hyperconverged-operator.v2.1.0|1|2.1.0||
+kubevirt-hyperconverged|2.3|kubevirt-hyperconverged-operator.v2.3.0|0|2.3.0||kubevirt-hyperconverged-operator.v2.2.0
+kubevirt-hyperconverged|2.3|kubevirt-hyperconverged-operator.v2.2.0|1|2.2.0||kubevirt-hyperconverged-operator.v2.1.0
+kubevirt-hyperconverged|2.3|kubevirt-hyperconverged-operator.v2.1.0|2|2.1.0||
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.5|0|2.4.5||kubevirt-hyperconverged-operator.v2.4.4
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.4|1|2.4.4||kubevirt-hyperconverged-operator.v2.4.3
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.3|2|2.4.3||kubevirt-hyperconverged-operator.v2.4.2
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.2|3|2.4.2||kubevirt-hyperconverged-operator.v2.4.1
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.1|4|2.4.1||kubevirt-hyperconverged-operator.v2.4.0
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.4.0|5|2.4.0||kubevirt-hyperconverged-operator.v2.3.0
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.3.0|6|2.3.0||kubevirt-hyperconverged-operator.v2.2.0
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.2.0|7|2.2.0||kubevirt-hyperconverged-operator.v2.1.0
+kubevirt-hyperconverged|2.4|kubevirt-hyperconverged-operator.v2.1.0|8|2.1.0||
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.7|0|2.0.7||advanced-cluster-management.v2.0.6
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.6|1|2.0.6||advanced-cluster-management.v2.0.5
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.5|2|2.0.5||advanced-cluster-management.v2.0.4
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.4|3|2.0.4||advanced-cluster-management.v2.0.3
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.3|4|2.0.3||advanced-cluster-management.v2.0.2
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.2|5|2.0.2||advanced-cluster-management.v2.0.1
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.1|6|2.0.1||advanced-cluster-management.v2.0.0
+advanced-cluster-management|release-2.0|advanced-cluster-management.v2.0.0|7|2.0.0||
+advanced-cluster-management|release-2.1|advanced-cluster-management.v2.1.2|0|2.1.2|>=2.0.0 <2.1.0|advanced-cluster-management.v2.1.0
+advanced-cluster-management|release-2.1|advanced-cluster-management.v2.1.1|1|2.1.1|>=2.0.0 <2.1.0|
+advanced-cluster-management|release-2.1|advanced-cluster-management.v2.1.2|1|2.1.2|>=2.0.0 <2.1.0|advanced-cluster-management.v2.1.1
+advanced-cluster-management|release-2.1|advanced-cluster-management.v2.1.0|2|2.1.0|>=2.0.0 <2.1.0|
+serverless-operator|4.3|serverless-operator.v1.7.2|0|1.7.2||serverless-operator.v1.7.1
+serverless-operator|4.3|serverless-operator.v1.7.1|1|1.7.1||serverless-operator.v1.7.0
+serverless-operator|4.3|serverless-operator.v1.7.0|2|1.7.0||serverless-operator.v1.6.0
+serverless-operator|4.3|serverless-operator.v1.6.0|3|1.6.0||serverless-operator.v1.5.0
+serverless-operator|4.3|serverless-operator.v1.5.0|4|1.5.0||serverless-operator.v1.4.1
+serverless-operator|4.3|serverless-operator.v1.4.1|5|1.4.1||serverless-operator.v1.4.0
+serverless-operator|4.3|serverless-operator.v1.4.0|6|1.4.0||serverless-operator.v1.3.0
+serverless-operator|4.3|serverless-operator.v1.3.0|7|1.3.0||serverless-operator.v1.2.0
+serverless-operator|4.3|serverless-operator.v1.2.0|8|1.2.0||serverless-operator.v1.1.0
+serverless-operator|4.3|serverless-operator.v1.1.0|9|1.1.0||serverless-operator.v1.0.0
+serverless-operator|4.3|serverless-operator.v1.0.0|10|1.0.0||
+serverless-operator|4.4|serverless-operator.v1.7.2|0|1.7.2||serverless-operator.v1.7.1
+serverless-operator|4.4|serverless-operator.v1.7.1|1|1.7.1||serverless-operator.v1.7.0
+serverless-operator|4.4|serverless-operator.v1.7.0|2|1.7.0||serverless-operator.v1.6.0
+serverless-operator|4.4|serverless-operator.v1.6.0|3|1.6.0||serverless-operator.v1.5.0
+serverless-operator|4.4|serverless-operator.v1.5.0|4|1.5.0||serverless-operator.v1.4.1
+serverless-operator|4.4|serverless-operator.v1.4.1|5|1.4.1||serverless-operator.v1.4.0
+serverless-operator|4.4|serverless-operator.v1.4.0|6|1.4.0||serverless-operator.v1.3.0
+serverless-operator|4.4|serverless-operator.v1.3.0|7|1.3.0||serverless-operator.v1.2.0
+serverless-operator|4.4|serverless-operator.v1.2.0|8|1.2.0||serverless-operator.v1.1.0
+serverless-operator|4.4|serverless-operator.v1.1.0|9|1.1.0||serverless-operator.v1.0.0
+serverless-operator|4.4|serverless-operator.v1.0.0|10|1.0.0||
+serverless-operator|4.5|serverless-operator.v1.10.0|0|1.10.0|>=1.9.0 <1.10.0|serverless-operator.v1.9.0
+serverless-operator|4.5|serverless-operator.v1.9.0|1|1.9.0|>=1.8.0 <1.9.0|serverless-operator.v1.8.0
+serverless-operator|4.5|serverless-operator.v1.8.0|2|1.8.0|>=1.7.2 <1.8.0|serverless-operator.v1.7.2
+serverless-operator|4.5|serverless-operator.v1.7.2|3|1.7.2||serverless-operator.v1.7.1
+serverless-operator|4.5|serverless-operator.v1.7.1|4|1.7.1||serverless-operator.v1.7.0
+serverless-operator|4.5|serverless-operator.v1.7.0|5|1.7.0||serverless-operator.v1.6.0
+serverless-operator|4.5|serverless-operator.v1.6.0|6|1.6.0||serverless-operator.v1.5.0
+serverless-operator|4.5|serverless-operator.v1.5.0|7|1.5.0||serverless-operator.v1.4.1
+serverless-operator|4.5|serverless-operator.v1.4.1|8|1.4.1||serverless-operator.v1.4.0
+serverless-operator|4.5|serverless-operator.v1.4.0|9|1.4.0||serverless-operator.v1.3.0
+serverless-operator|4.5|serverless-operator.v1.3.0|10|1.3.0||serverless-operator.v1.2.0
+serverless-operator|4.5|serverless-operator.v1.2.0|11|1.2.0||serverless-operator.v1.1.0
+serverless-operator|4.5|serverless-operator.v1.1.0|12|1.1.0||serverless-operator.v1.0.0
+serverless-operator|4.5|serverless-operator.v1.0.0|13|1.0.0||
+serverless-operator|4.6|serverless-operator.v1.12.0|0|1.12.0|>=1.11.0 <1.12.0|serverless-operator.v1.11.0
+serverless-operator|4.6|serverless-operator.v1.11.0|1|1.11.0|>=1.10.0 <1.11.0|serverless-operator.v1.10.0
+serverless-operator|4.6|serverless-operator.v1.10.0|2|1.10.0|>=1.9.0 <1.10.0|serverless-operator.v1.9.0
+serverless-operator|4.6|serverless-operator.v1.9.0|3|1.9.0|>=1.8.0 <1.9.0|serverless-operator.v1.8.0
+serverless-operator|4.6|serverless-operator.v1.8.0|4|1.8.0|>=1.7.2 <1.8.0|serverless-operator.v1.7.2
+serverless-operator|4.6|serverless-operator.v1.7.2|5|1.7.2||serverless-operator.v1.7.1
+serverless-operator|4.6|serverless-operator.v1.7.1|6|1.7.1||serverless-operator.v1.7.0
+serverless-operator|4.6|serverless-operator.v1.7.0|7|1.7.0||serverless-operator.v1.6.0
+serverless-operator|4.6|serverless-operator.v1.6.0|8|1.6.0||serverless-operator.v1.5.0
+serverless-operator|4.6|serverless-operator.v1.5.0|9|1.5.0||serverless-operator.v1.4.1
+serverless-operator|4.6|serverless-operator.v1.4.1|10|1.4.1||serverless-operator.v1.4.0
+serverless-operator|4.6|serverless-operator.v1.4.0|11|1.4.0||serverless-operator.v1.3.0
+serverless-operator|4.6|serverless-operator.v1.3.0|12|1.3.0||serverless-operator.v1.2.0
+serverless-operator|4.6|serverless-operator.v1.2.0|13|1.2.0||serverless-operator.v1.1.0
+serverless-operator|4.6|serverless-operator.v1.1.0|14|1.1.0||serverless-operator.v1.0.0
+serverless-operator|4.6|serverless-operator.v1.0.0|15|1.0.0||
+red-hat-camel-k|techpreview|red-hat-camel-k-operator.v1.2.1|0|1.2.1|>=1.0.0 <1.2.1|
+openshift-pipelines-operator-rh|ocp-4.4|openshift-pipelines-operator.v1.0.1|0|1.0.1||
+openshift-pipelines-operator-rh|ocp-4.5|redhat-openshift-pipelines-operator.v1.1.2|0|1.1.2||openshift-pipelines-operator.v1.1.1
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|1|1.1.1||openshift-pipelines-operator.v1.0.1
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc1|2|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|2|1.1.1||1.1.0-rc1
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc2|3|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|3|1.1.1||1.1.0-rc2
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc3|4|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|4|1.1.1||1.1.0-rc3
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc4|5|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|5|1.1.1||1.1.0-rc4
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc5|6|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|6|1.1.1||1.1.0-rc5
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc6|7|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|7|1.1.1||1.1.0-rc6
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc7|8|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|8|1.1.1||1.1.0-rc7
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc8|9|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|9|1.1.1||1.1.0-rc8
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0-rc9|10|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|10|1.1.1||1.1.0-rc9
+openshift-pipelines-operator-rh|ocp-4.5|1.1.0|11|||
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.1.1|11|1.1.1||1.1.0
+openshift-pipelines-operator-rh|ocp-4.5|openshift-pipelines-operator.v1.0.1|12|1.0.1||
+openshift-pipelines-operator-rh|ocp-4.6|redhat-openshift-pipelines-operator.v1.2.3|0|1.2.3||redhat-openshift-pipelines-operator.v1.2.2
+openshift-pipelines-operator-rh|ocp-4.6|redhat-openshift-pipelines-operator.v1.2.2|1|1.2.2||redhat-openshift-pipelines-operator.v1.2.1
+openshift-pipelines-operator-rh|ocp-4.6|redhat-openshift-pipelines-operator.v1.2.1|2|1.2.1||redhat-openshift-pipelines-operator.v1.2.0
+openshift-pipelines-operator-rh|ocp-4.6|redhat-openshift-pipelines-operator.v1.2.0|3|1.2.0||redhat-openshift-pipelines-operator.v1.1.2
+openshift-pipelines-operator-rh|ocp-4.6|redhat-openshift-pipelines-operator.v1.1.2|4|1.1.2||openshift-pipelines-operator.v1.1.1
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|5|1.1.1||openshift-pipelines-operator.v1.0.1
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc1|6|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|6|1.1.1||1.1.0-rc1
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc2|7|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|7|1.1.1||1.1.0-rc2
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc3|8|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|8|1.1.1||1.1.0-rc3
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc4|9|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|9|1.1.1||1.1.0-rc4
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc5|10|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|10|1.1.1||1.1.0-rc5
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc6|11|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|11|1.1.1||1.1.0-rc6
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc7|12|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|12|1.1.1||1.1.0-rc7
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc8|13|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|13|1.1.1||1.1.0-rc8
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0-rc9|14|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|14|1.1.1||1.1.0-rc9
+openshift-pipelines-operator-rh|ocp-4.6|1.1.0|15|||
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.1.1|15|1.1.1||1.1.0
+openshift-pipelines-operator-rh|ocp-4.6|openshift-pipelines-operator.v1.0.1|16|1.0.1||
+openshift-pipelines-operator-rh|preview|redhat-openshift-pipelines-operator.v1.2.3|0|1.2.3||redhat-openshift-pipelines-operator.v1.2.2
+openshift-pipelines-operator-rh|preview|redhat-openshift-pipelines-operator.v1.2.2|1|1.2.2||redhat-openshift-pipelines-operator.v1.2.1
+openshift-pipelines-operator-rh|preview|redhat-openshift-pipelines-operator.v1.2.1|2|1.2.1||redhat-openshift-pipelines-operator.v1.2.0
+openshift-pipelines-operator-rh|preview|redhat-openshift-pipelines-operator.v1.2.0|3|1.2.0||redhat-openshift-pipelines-operator.v1.1.2
+openshift-pipelines-operator-rh|preview|redhat-openshift-pipelines-operator.v1.1.2|4|1.1.2||openshift-pipelines-operator.v1.1.1
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|5|1.1.1||openshift-pipelines-operator.v1.0.1
+openshift-pipelines-operator-rh|preview|1.1.0-rc1|6|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|6|1.1.1||1.1.0-rc1
+openshift-pipelines-operator-rh|preview|1.1.0-rc2|7|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|7|1.1.1||1.1.0-rc2
+openshift-pipelines-operator-rh|preview|1.1.0-rc3|8|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|8|1.1.1||1.1.0-rc3
+openshift-pipelines-operator-rh|preview|1.1.0-rc4|9|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|9|1.1.1||1.1.0-rc4
+openshift-pipelines-operator-rh|preview|1.1.0-rc5|10|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|10|1.1.1||1.1.0-rc5
+openshift-pipelines-operator-rh|preview|1.1.0-rc6|11|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|11|1.1.1||1.1.0-rc6
+openshift-pipelines-operator-rh|preview|1.1.0-rc7|12|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|12|1.1.1||1.1.0-rc7
+openshift-pipelines-operator-rh|preview|1.1.0-rc8|13|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|13|1.1.1||1.1.0-rc8
+openshift-pipelines-operator-rh|preview|1.1.0-rc9|14|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|14|1.1.1||1.1.0-rc9
+openshift-pipelines-operator-rh|preview|1.1.0|15|||
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.1.1|15|1.1.1||1.1.0
+openshift-pipelines-operator-rh|preview|openshift-pipelines-operator.v1.0.1|16|1.0.1||
+openshift-pipelines-operator-rh|stable|redhat-openshift-pipelines-operator.v1.2.3|0|1.2.3||redhat-openshift-pipelines-operator.v1.2.2
+openshift-pipelines-operator-rh|stable|redhat-openshift-pipelines-operator.v1.2.2|1|1.2.2||redhat-openshift-pipelines-operator.v1.2.1
+openshift-pipelines-operator-rh|stable|redhat-openshift-pipelines-operator.v1.2.1|2|1.2.1||redhat-openshift-pipelines-operator.v1.2.0
+openshift-pipelines-operator-rh|stable|redhat-openshift-pipelines-operator.v1.2.0|3|1.2.0||redhat-openshift-pipelines-operator.v1.1.2
+openshift-pipelines-operator-rh|stable|redhat-openshift-pipelines-operator.v1.1.2|4|1.1.2||openshift-pipelines-operator.v1.1.1
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|5|1.1.1||openshift-pipelines-operator.v1.0.1
+openshift-pipelines-operator-rh|stable|1.1.0-rc1|6|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|6|1.1.1||1.1.0-rc1
+openshift-pipelines-operator-rh|stable|1.1.0-rc2|7|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|7|1.1.1||1.1.0-rc2
+openshift-pipelines-operator-rh|stable|1.1.0-rc3|8|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|8|1.1.1||1.1.0-rc3
+openshift-pipelines-operator-rh|stable|1.1.0-rc4|9|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|9|1.1.1||1.1.0-rc4
+openshift-pipelines-operator-rh|stable|1.1.0-rc5|10|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|10|1.1.1||1.1.0-rc5
+openshift-pipelines-operator-rh|stable|1.1.0-rc6|11|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|11|1.1.1||1.1.0-rc6
+openshift-pipelines-operator-rh|stable|1.1.0-rc7|12|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|12|1.1.1||1.1.0-rc7
+openshift-pipelines-operator-rh|stable|1.1.0-rc8|13|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|13|1.1.1||1.1.0-rc8
+openshift-pipelines-operator-rh|stable|1.1.0-rc9|14|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|14|1.1.1||1.1.0-rc9
+openshift-pipelines-operator-rh|stable|1.1.0|15|||
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.1.1|15|1.1.1||1.1.0
+openshift-pipelines-operator-rh|stable|openshift-pipelines-operator.v1.0.1|16|1.0.1||
+eap|alpha|eap-operator.v2.1.0|0|2.1.0||eap-operator.v2.0.2
+eap|alpha|eap-operator.v2.0.2|1|2.0.2||eap-operator.v2.0.1
+eap|alpha|eap-operator.v2.0.1|2|2.0.1||eap-operator.v2.0.0
+eap|alpha|eap-operator.v2.0.0|3|2.0.0||
+amq-streams|amq-streams-1.5.x|amqstreams.v1.5.4|0|1.5.4||amqstreams.v1.5.3
+amq-streams|amq-streams-1.5.x|amqstreams.v1.5.3|1|1.5.3||amqstreams.v1.5.2
+amq-streams|amq-streams-1.5.x|amqstreams.v1.5.2|2|1.5.2||amqstreams.v1.5.1
+amq-streams|amq-streams-1.5.x|amqstreams.v1.5.1|3|1.5.1||amqstreams.v1.5.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.5.0|4|1.5.0||amqstreams.v1.4.1
+amq-streams|amq-streams-1.5.x|amqstreams.v1.4.1|5|1.4.1||amqstreams.v1.4.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.4.0|6|1.4.0||amqstreams.v1.3.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.3.0|7|1.3.0||amqstreams.v1.2.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.2.0|8|1.2.0||amqstreams.v1.1.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.1.0|9|1.1.0||amqstreams.v1.0.0
+amq-streams|amq-streams-1.5.x|amqstreams.v1.0.0|10|1.0.0||
+amq-streams|amq-streams-1.6.x|amqstreams.v1.6.2|0|1.6.2||amqstreams.v1.6.1
+amq-streams|amq-streams-1.6.x|amqstreams.v1.6.1|1|1.6.1||amqstreams.v1.6.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.6.0|2|1.6.0||amqstreams.v1.5.4
+amq-streams|amq-streams-1.6.x|amqstreams.v1.5.4|3|1.5.4||amqstreams.v1.5.3
+amq-streams|amq-streams-1.6.x|amqstreams.v1.5.3|4|1.5.3||amqstreams.v1.5.2
+amq-streams|amq-streams-1.6.x|amqstreams.v1.5.2|5|1.5.2||amqstreams.v1.5.1
+amq-streams|amq-streams-1.6.x|amqstreams.v1.5.1|6|1.5.1||amqstreams.v1.5.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.5.0|7|1.5.0||amqstreams.v1.4.1
+amq-streams|amq-streams-1.6.x|amqstreams.v1.4.1|8|1.4.1||amqstreams.v1.4.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.4.0|9|1.4.0||amqstreams.v1.3.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.3.0|10|1.3.0||amqstreams.v1.2.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.2.0|11|1.2.0||amqstreams.v1.1.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.1.0|12|1.1.0||amqstreams.v1.0.0
+amq-streams|amq-streams-1.6.x|amqstreams.v1.0.0|13|1.0.0||
+amq-streams|amq-streams-1.x|amqstreams.v1.6.2|0|1.6.2||amqstreams.v1.6.1
+amq-streams|amq-streams-1.x|amqstreams.v1.6.1|1|1.6.1||amqstreams.v1.6.0
+amq-streams|amq-streams-1.x|amqstreams.v1.6.0|2|1.6.0||amqstreams.v1.5.4
+amq-streams|amq-streams-1.x|amqstreams.v1.5.4|3|1.5.4||amqstreams.v1.5.3
+amq-streams|amq-streams-1.x|amqstreams.v1.5.3|4|1.5.3||amqstreams.v1.5.2
+amq-streams|amq-streams-1.x|amqstreams.v1.5.2|5|1.5.2||amqstreams.v1.5.1
+amq-streams|amq-streams-1.x|amqstreams.v1.5.1|6|1.5.1||amqstreams.v1.5.0
+amq-streams|amq-streams-1.x|amqstreams.v1.5.0|7|1.5.0||amqstreams.v1.4.1
+amq-streams|amq-streams-1.x|amqstreams.v1.4.1|8|1.4.1||amqstreams.v1.4.0
+amq-streams|amq-streams-1.x|amqstreams.v1.4.0|9|1.4.0||amqstreams.v1.3.0
+amq-streams|amq-streams-1.x|amqstreams.v1.3.0|10|1.3.0||amqstreams.v1.2.0
+amq-streams|amq-streams-1.x|amqstreams.v1.2.0|11|1.2.0||amqstreams.v1.1.0
+amq-streams|amq-streams-1.x|amqstreams.v1.1.0|12|1.1.0||amqstreams.v1.0.0
+amq-streams|amq-streams-1.x|amqstreams.v1.0.0|13|1.0.0||
+amq-streams|stable|amqstreams.v1.6.2|0|1.6.2||amqstreams.v1.6.1
+amq-streams|stable|amqstreams.v1.6.1|1|1.6.1||amqstreams.v1.6.0
+amq-streams|stable|amqstreams.v1.6.0|2|1.6.0||amqstreams.v1.5.4
+amq-streams|stable|amqstreams.v1.5.4|3|1.5.4||amqstreams.v1.5.3
+amq-streams|stable|amqstreams.v1.5.3|4|1.5.3||amqstreams.v1.5.2
+amq-streams|stable|amqstreams.v1.5.2|5|1.5.2||amqstreams.v1.5.1
+amq-streams|stable|amqstreams.v1.5.1|6|1.5.1||amqstreams.v1.5.0
+amq-streams|stable|amqstreams.v1.5.0|7|1.5.0||amqstreams.v1.4.1
+amq-streams|stable|amqstreams.v1.4.1|8|1.4.1||amqstreams.v1.4.0
+amq-streams|stable|amqstreams.v1.4.0|9|1.4.0||amqstreams.v1.3.0
+amq-streams|stable|amqstreams.v1.3.0|10|1.3.0||amqstreams.v1.2.0
+amq-streams|stable|amqstreams.v1.2.0|11|1.2.0||amqstreams.v1.1.0
+amq-streams|stable|amqstreams.v1.1.0|12|1.1.0||amqstreams.v1.0.0
+amq-streams|stable|amqstreams.v1.0.0|13|1.0.0||
+ocs-operator|stable-4.3|ocs-operator.v4.3.0|0|4.3.0|>=4.2.0 <4.3.0|
+ocs-operator|stable-4.4|ocs-operator.v4.4.2|0|4.4.2|>=4.2.0 <4.4.2|
+ocs-operator|stable-4.5|ocs-operator.v4.5.2|0|4.5.2|>=4.2.0 <4.5.2|
+ocs-operator|stable-4.6|ocs-operator.v4.6.2|0|4.6.2|>=4.2.0 <4.6.2|
+openshift-jenkins-operator|alpha|jenkins-operator.0.7.1|0|0.7.1||
+amq7-interconnect-operator|1.2.0|amq7-interconnect-operator.v1.2.3|0|1.2.3||amq7-interconnect-operator.v1.2.2
+amq7-interconnect-operator|1.2.0|amq7-interconnect-operator.v1.2.2|1|1.2.1||amq7-interconnect-operator.v1.2.1
+amq7-interconnect-operator|1.2.0|amq7-interconnect-operator.v1.2.1|2|1.2.1||amq7-interconnect-operator.v1.2.0
+amq7-interconnect-operator|1.2.0|amq7-interconnect-operator.v1.2.0|3|1.2.0||
+container-security-operator|quay-v3.4|container-security-operator.v3.4.0|0|3.4.0|>=3.3 <3.4|
+container-security-operator|quay-v3.3|container-security-operator.v3.3.4|0|3.3.4|>=3.3.0 <3.3.4|
+quay-operator|quay-v3.4|quay-operator.v3.4.0|0|3.4.0|>=3.3.x <3.4.0|
+quay-operator|quay-v3.3|red-hat-quay.v3.3.4|0|3.3.4|>=3.3.0 <3.3.4|
+quay-bridge-operator|quay-v3.4|quay-bridge-operator.v3.4.0|0|3.4.0|>=3.3 <3.4|
+quay-bridge-operator|quay-v3.3|quay-bridge-operator.v3.3.4|0|3.3.4|>=3.3.0 <3.3.4|
+codeready-workspaces|latest|crwoperator.v2.6.0|0|2.6.0||crwoperator.v2.5.1
+codeready-workspaces|latest|crwoperator.v2.5.1|1|2.5.1||crwoperator.v2.5.0
+codeready-workspaces|latest|crwoperator.v2.5.0|2|2.5.0||crwoperator.v2.4.0
+codeready-workspaces|latest|crwoperator.v2.4.0|3|2.4.0||crwoperator.v2.3.0
+codeready-workspaces|latest|crwoperator.v2.3.0|4|2.3.0||crwoperator.v2.2.0
+codeready-workspaces|latest|crwoperator.v2.2.0|5|2.2.0||crwoperator.v2.1.1
+codeready-workspaces|latest|crwoperator.v2.1.1|6|2.1.1||crwoperator.v2.1.0
+codeready-workspaces|latest|crwoperator.v2.1.0|7|2.1.0||crwoperator.v2.0.0
+codeready-workspaces|latest|crwoperator.v2.0.0|8|2.0.0||
+datagrid|8.0.x|datagrid-operator.v8.0.3|0|8.0.3||datagrid-operator.v8.0.2
+datagrid|8.0.x|datagrid-operator.v8.0.2|1|8.0.2||datagrid-operator.v8.0.1
+datagrid|8.0.x|datagrid-operator.v8.0.1|2|8.0.1||datagrid-operator.v8.0.0
+datagrid|8.0.x|datagrid-operator.v8.0.0|3|8.0.0||
+datagrid|8.1.x|datagrid-operator.v8.1.4|0|8.1.4||datagrid-operator.v8.1.3
+datagrid|8.1.x|datagrid-operator.v8.1.3|1|8.1.3||datagrid-operator.v8.1.2
+datagrid|8.1.x|datagrid-operator.v8.1.2|2|8.1.2||datagrid-operator.v8.1.1
+datagrid|8.1.x|datagrid-operator.v8.1.1|3|8.1.1||datagrid-operator.v8.1.0
+datagrid|8.1.x|datagrid-operator.v8.1.0|4|8.1.0||datagrid-operator.v8.0.3
+datagrid|8.1.x|datagrid-operator.v8.0.3|5|8.0.3||datagrid-operator.v8.0.2
+datagrid|8.1.x|datagrid-operator.v8.0.2|6|8.0.2||datagrid-operator.v8.0.1
+datagrid|8.1.x|datagrid-operator.v8.0.1|7|8.0.1||datagrid-operator.v8.0.0
+datagrid|8.1.x|datagrid-operator.v8.0.0|8|8.0.0||
+cluster-kube-descheduler-operator|4.6|clusterkubedescheduleroperator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.3.0-0 <4.6.0|
+local-storage-operator|4.6|local-storage-operator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.3.0 <4.6.0-202101300140.p0|
+ptp-operator|4.6|ptp-operator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.3.0-0 <4.6.0-202101300140.p0|
+vertical-pod-autoscaler|4.6|verticalpodautoscaler.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.5.0 <4.6.0-202101300140.p0|
+cluster-logging|4.6|clusterlogging.4.6.0-202101301510.p0|0|4.6.0-202101301510.p0|>=4.4.0-0 <4.6.0-202101301510.p0|
+metering-ocp|4.6|metering-operator.4.6.0-202101301510.p0|0|4.6.0-202101301510.p0|>=4.3.0 <4.6.0-202101301510.p0|
+elasticsearch-operator|4.6|elasticsearch-operator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.4.0-0 <4.6.0-202101300140.p0|
+sriov-network-operator|4.6|sriov-network-operator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.3.0-0 <4.6.0-202101300140.p0|
+clusterresourceoverride|4.6|clusterresourceoverride-operator.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.3.0 <4.6.0-202101300140.p0|
+nfd|4.6|nfd.4.6.0-202101300140.p0|0|4.6.0-202101300140.p0|>=4.1.0 <4.7.0|
+performance-addon-operator|4.4|performance-addon-operator.v4.4.1|0|4.4.1|>=4.4.0 <4.4.1|
+performance-addon-operator|4.5|performance-addon-operator.v4.5.2|0|4.5.2|>=4.4.0 <4.5.2|
+performance-addon-operator|4.6|performance-addon-operator.v4.6.1|0|4.6.1|>=4.5.0 <4.6.1|
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|0|1.2.5|>=0.0.0 <1.2.5|
+mtc-operator|release-v1.2|mtc-operator.v1.2.4|1|||
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|1|1.2.5|>=0.0.0 <1.2.5|mtc-operator.v1.2.4
+mtc-operator|release-v1.2|mtc-operator.v1.2.3|2|||
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|2|1.2.5|>=0.0.0 <1.2.5|mtc-operator.v1.2.3
+mtc-operator|release-v1.2|mtc-operator.v1.2.2|3|||
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|3|1.2.5|>=0.0.0 <1.2.5|mtc-operator.v1.2.2
+mtc-operator|release-v1.2|mtc-operator.v1.2.1|4|||
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|4|1.2.5|>=0.0.0 <1.2.5|mtc-operator.v1.2.1
+mtc-operator|release-v1.2|mtc-operator.v1.2.0|5|||
+mtc-operator|release-v1.2|mtc-operator.v1.2.5|5|1.2.5|>=0.0.0 <1.2.5|mtc-operator.v1.2.0
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|0|1.3.2|>=0.0.0 <1.3.2|
+mtc-operator|release-v1.3|mtc-operator.v1.3.1|1|1.3.1|>=0.0.0 <1.3.1|
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|1|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.3.1
+mtc-operator|release-v1.3|mtc-operator.v1.3.0|2|1.3.0|>=0.0.0 <1.3.0|
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|2|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.3.0
+mtc-operator|release-v1.3|mtc-operator.v1.2.5|3|1.2.5|>=0.0.0 <1.2.5|
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|3|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.5
+mtc-operator|release-v1.3|mtc-operator.v1.2.4|4|||
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|4|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.4
+mtc-operator|release-v1.3|mtc-operator.v1.2.3|5|||
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|5|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.3
+mtc-operator|release-v1.3|mtc-operator.v1.2.2|6|||
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|6|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.2
+mtc-operator|release-v1.3|mtc-operator.v1.2.1|7|||
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|7|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.1
+mtc-operator|release-v1.3|mtc-operator.v1.2.0|8|||
+mtc-operator|release-v1.3|mtc-operator.v1.3.2|8|1.3.2|>=0.0.0 <1.3.2|mtc-operator.v1.2.0
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|0|1.4.0|>=0.0.0 <1.4.0|
+mtc-operator|release-v1.4|mtc-operator.v1.3.2|1|1.3.2|>=0.0.0 <1.3.2|
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|1|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.3.2
+mtc-operator|release-v1.4|mtc-operator.v1.3.1|2|1.3.1|>=0.0.0 <1.3.1|
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|2|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.3.1
+mtc-operator|release-v1.4|mtc-operator.v1.3.0|3|1.3.0|>=0.0.0 <1.3.0|
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|3|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.3.0
+mtc-operator|release-v1.4|mtc-operator.v1.2.5|4|1.2.5|>=0.0.0 <1.2.5|
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|4|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.5
+mtc-operator|release-v1.4|mtc-operator.v1.2.4|5|||
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|5|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.4
+mtc-operator|release-v1.4|mtc-operator.v1.2.3|6|||
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|6|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.3
+mtc-operator|release-v1.4|mtc-operator.v1.2.2|7|||
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|7|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.2
+mtc-operator|release-v1.4|mtc-operator.v1.2.1|8|||
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|8|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.1
+mtc-operator|release-v1.4|mtc-operator.v1.2.0|9|||
+mtc-operator|release-v1.4|mtc-operator.v1.4.0|9|1.4.0|>=0.0.0 <1.4.0|mtc-operator.v1.2.0
+jaeger-product|1.13-stable|jaeger-operator.v1.13.2-1|0|1.13.2-1|>=1.13.0 <1.13.2|
+jaeger-product|1.17-stable|jaeger-operator.v1.17.8|0|1.17.8|>=1.13.0 <1.17.8|
+jaeger-product|1.20-stable|jaeger-operator.v1.20.3|0|1.20.3|>=1.13.0 <1.20.3|
+jaeger-product|stable|jaeger-operator.v1.20.3|0|1.20.3|>=1.13.0 <1.20.3|
+jaeger-product|tech-preview|jaeger-operator.v2.0.0-tp.1|0|2.0.0-tp.1|>=1.13.0 <2.0.0-tp.1|
+kiali-ossm|stable|kiali-operator.v1.24.5|0|1.24.5||kiali-operator.v1.24.4
+kiali-ossm|stable|kiali-operator.v1.24.4|1|1.24.4||kiali-operator.v1.24.3
+kiali-ossm|stable|kiali-operator.v1.24.3|2|1.24.3||kiali-operator.v1.24.2
+kiali-ossm|stable|kiali-operator.v1.24.2|3|1.24.2||kiali-operator.v1.12.16
+kiali-ossm|stable|kiali-operator.v1.12.16|4|1.12.16||kiali-operator.v1.12.15
+kiali-ossm|stable|kiali-operator.v1.12.15|5|1.12.15||kiali-operator.v1.12.14
+kiali-ossm|stable|kiali-operator.v1.12.14|6|1.12.14||kiali-operator.v1.12.13
+kiali-ossm|stable|kiali-operator.v1.12.13|7|1.12.13||kiali-operator.v1.12.12
+kiali-ossm|stable|kiali-operator.v1.12.12|8|1.12.12||kiali-operator.v1.12.11
+kiali-ossm|stable|kiali-operator.v1.12.11|9|1.12.11||kiali-operator.v1.12.7
+kiali-ossm|stable|kiali-operator.v1.12.7|10|1.12.7||kiali-operator.v1.0.12
+kiali-ossm|stable|kiali-operator.v1.0.12|11|1.0.12||kiali-operator.v1.0.11
+kiali-ossm|stable|kiali-operator.v1.0.11|12|1.0.11||kiali-operator.v1.0.10
+kiali-ossm|stable|kiali-operator.v1.0.10|13|1.0.10||kiali-operator.v1.0.9
+kiali-ossm|stable|kiali-operator.v1.0.9|14|1.0.9||kiali-operator.v1.0.8
+kiali-ossm|stable|kiali-operator.v1.0.8|15|1.0.8||kiali-operator.v1.0.7
+kiali-ossm|stable|kiali-operator.v1.0.7|16|1.0.7||kiali-operator.v1.0.6
+kiali-ossm|stable|kiali-operator.v1.0.6|17|1.0.6||kiali-operator.v1.0.5
+kiali-ossm|stable|kiali-operator.v1.0.5|18|1.0.5||
+servicemeshoperator|1.0|servicemeshoperator.v2.0.2|0|2.0.2-0|>=1.0.2 <2.0.2-0|servicemeshoperator.v2.0.1.1
+servicemeshoperator|1.0|servicemeshoperator.v2.0.1.1|1|2.0.1-1|>=1.0.2 <2.0.1-1|servicemeshoperator.v2.0.1
+servicemeshoperator|1.0|servicemeshoperator.v2.0.1|2|2.0.1-0|>=1.0.2 <2.0.1-0|servicemeshoperator.v2.0.0.2
+servicemeshoperator|1.0|servicemeshoperator.v2.0.0.2|3|2.0.0-2|>=1.0.2 <2.0.0-2|servicemeshoperator.v2.0.0.1
+servicemeshoperator|1.0|servicemeshoperator.v2.0.0.1|4|2.0.0-1|>=1.0.2 <2.0.0-1|servicemeshoperator.v2.0.0
+servicemeshoperator|1.0|servicemeshoperator.v2.0.0|5|2.0.0-0|>=1.0.2 <2.0.0-0|servicemeshoperator.v1.1.10
+servicemeshoperator|1.0|servicemeshoperator.v1.1.10|6|1.1.10-0|>=1.0.2 <1.1.10-0|servicemeshoperator.v1.1.9
+servicemeshoperator|1.0|servicemeshoperator.v1.1.9|7|1.1.9|>=1.0.2 <1.1.9|servicemeshoperator.v1.1.8
+servicemeshoperator|1.0|servicemeshoperator.v1.1.8|8|1.1.8|>=1.0.2 <1.1.8|servicemeshoperator.v1.1.7
+servicemeshoperator|1.0|servicemeshoperator.v1.1.7|9|1.1.7|>=1.0.2 <1.1.7|servicemeshoperator.v1.1.6
+servicemeshoperator|1.0|servicemeshoperator.v1.1.6|10|1.1.6|>=1.0.2 <1.1.6|servicemeshoperator.v1.1.5.2
+servicemeshoperator|1.0|servicemeshoperator.v1.1.5.2|11|1.1.5+2|>=1.0.2 <1.1.5|servicemeshoperator.v1.1.5
+servicemeshoperator|1.0|servicemeshoperator.v1.1.5|12|1.1.5|>=1.0.2 <1.1.5|servicemeshoperator.v1.1.4.2
+servicemeshoperator|1.0|servicemeshoperator.v1.1.4.2|13|1.1.4+2|>=1.0.2 <1.1.4|servicemeshoperator.v1.1.4
+servicemeshoperator|1.0|servicemeshoperator.v1.1.4|14|1.1.4|>=1.0.2 <1.1.4|servicemeshoperator.v1.1.3
+servicemeshoperator|1.0|servicemeshoperator.v1.1.3|15|1.1.3|>=1.0.2 <1.1.3|servicemeshoperator.v1.1.2.3
+servicemeshoperator|1.0|servicemeshoperator.v1.1.2.3|16|1.1.2+3|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.2.2
+servicemeshoperator|1.0|servicemeshoperator.v1.1.2.2|17|1.1.2+2|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.2
+servicemeshoperator|1.0|servicemeshoperator.v1.1.2|18|1.1.2|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.1
+servicemeshoperator|1.0|servicemeshoperator.v1.1.1|19|1.1.1|>=1.0.2 <1.1.1|servicemeshoperator.v1.1.0
+servicemeshoperator|1.0|servicemeshoperator.v1.1.0|20|1.1.0|>=1.0.2 <1.1.0|servicemeshoperator.v1.0.10
+servicemeshoperator|1.0|servicemeshoperator.v1.0.10|21|1.0.10||servicemeshoperator.v1.0.9
+servicemeshoperator|1.0|servicemeshoperator.v1.0.9|22|1.0.9||servicemeshoperator.v1.0.8
+servicemeshoperator|1.0|servicemeshoperator.v1.0.8|23|1.0.8||servicemeshoperator.v1.0.7
+servicemeshoperator|1.0|servicemeshoperator.v1.0.7|24|1.0.7||servicemeshoperator.v1.0.6
+servicemeshoperator|1.0|servicemeshoperator.v1.0.6|25|1.0.6||servicemeshoperator.v1.0.5
+servicemeshoperator|1.0|servicemeshoperator.v1.0.5|26|1.0.5||servicemeshoperator.v1.0.4
+servicemeshoperator|1.0|servicemeshoperator.v1.0.4|27|1.0.4||servicemeshoperator.v1.0.3
+servicemeshoperator|1.0|servicemeshoperator.v1.0.3|28|1.0.3||servicemeshoperator.v1.0.2
+servicemeshoperator|1.0|servicemeshoperator.v1.0.2|29|1.0.2||servicemeshoperator.v1.0.1
+servicemeshoperator|1.0|servicemeshoperator.v1.0.1|30|1.0.1||servicemeshoperator.v1.0.0
+servicemeshoperator|1.0|servicemeshoperator.v1.0.0|31|1.0.0||
+servicemeshoperator|stable|servicemeshoperator.v2.0.2|0|2.0.2-0|>=1.0.2 <2.0.2-0|servicemeshoperator.v2.0.1.1
+servicemeshoperator|stable|servicemeshoperator.v2.0.1.1|1|2.0.1-1|>=1.0.2 <2.0.1-1|servicemeshoperator.v2.0.1
+servicemeshoperator|stable|servicemeshoperator.v2.0.1|2|2.0.1-0|>=1.0.2 <2.0.1-0|servicemeshoperator.v2.0.0.2
+servicemeshoperator|stable|servicemeshoperator.v2.0.0.2|3|2.0.0-2|>=1.0.2 <2.0.0-2|servicemeshoperator.v2.0.0.1
+servicemeshoperator|stable|servicemeshoperator.v2.0.0.1|4|2.0.0-1|>=1.0.2 <2.0.0-1|servicemeshoperator.v2.0.0
+servicemeshoperator|stable|servicemeshoperator.v2.0.0|5|2.0.0-0|>=1.0.2 <2.0.0-0|servicemeshoperator.v1.1.10
+servicemeshoperator|stable|servicemeshoperator.v1.1.10|6|1.1.10-0|>=1.0.2 <1.1.10-0|servicemeshoperator.v1.1.9
+servicemeshoperator|stable|servicemeshoperator.v1.1.9|7|1.1.9|>=1.0.2 <1.1.9|servicemeshoperator.v1.1.8
+servicemeshoperator|stable|servicemeshoperator.v1.1.8|8|1.1.8|>=1.0.2 <1.1.8|servicemeshoperator.v1.1.7
+servicemeshoperator|stable|servicemeshoperator.v1.1.7|9|1.1.7|>=1.0.2 <1.1.7|servicemeshoperator.v1.1.6
+servicemeshoperator|stable|servicemeshoperator.v1.1.6|10|1.1.6|>=1.0.2 <1.1.6|servicemeshoperator.v1.1.5.2
+servicemeshoperator|stable|servicemeshoperator.v1.1.5.2|11|1.1.5+2|>=1.0.2 <1.1.5|servicemeshoperator.v1.1.5
+servicemeshoperator|stable|servicemeshoperator.v1.1.5|12|1.1.5|>=1.0.2 <1.1.5|servicemeshoperator.v1.1.4.2
+servicemeshoperator|stable|servicemeshoperator.v1.1.4.2|13|1.1.4+2|>=1.0.2 <1.1.4|servicemeshoperator.v1.1.4
+servicemeshoperator|stable|servicemeshoperator.v1.1.4|14|1.1.4|>=1.0.2 <1.1.4|servicemeshoperator.v1.1.3
+servicemeshoperator|stable|servicemeshoperator.v1.1.3|15|1.1.3|>=1.0.2 <1.1.3|servicemeshoperator.v1.1.2.3
+servicemeshoperator|stable|servicemeshoperator.v1.1.2.3|16|1.1.2+3|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.2.2
+servicemeshoperator|stable|servicemeshoperator.v1.1.2.2|17|1.1.2+2|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.2
+servicemeshoperator|stable|servicemeshoperator.v1.1.2|18|1.1.2|>=1.0.2 <1.1.2|servicemeshoperator.v1.1.1
+servicemeshoperator|stable|servicemeshoperator.v1.1.1|19|1.1.1|>=1.0.2 <1.1.1|servicemeshoperator.v1.1.0
+servicemeshoperator|stable|servicemeshoperator.v1.1.0|20|1.1.0|>=1.0.2 <1.1.0|servicemeshoperator.v1.0.10
+servicemeshoperator|stable|servicemeshoperator.v1.0.10|21|1.0.10||servicemeshoperator.v1.0.9
+servicemeshoperator|stable|servicemeshoperator.v1.0.9|22|1.0.9||servicemeshoperator.v1.0.8
+servicemeshoperator|stable|servicemeshoperator.v1.0.8|23|1.0.8||servicemeshoperator.v1.0.7
+servicemeshoperator|stable|servicemeshoperator.v1.0.7|24|1.0.7||servicemeshoperator.v1.0.6
+servicemeshoperator|stable|servicemeshoperator.v1.0.6|25|1.0.6||servicemeshoperator.v1.0.5
+servicemeshoperator|stable|servicemeshoperator.v1.0.5|26|1.0.5||servicemeshoperator.v1.0.4
+servicemeshoperator|stable|servicemeshoperator.v1.0.4|27|1.0.4||servicemeshoperator.v1.0.3
+servicemeshoperator|stable|servicemeshoperator.v1.0.3|28|1.0.3||servicemeshoperator.v1.0.2
+servicemeshoperator|stable|servicemeshoperator.v1.0.2|29|1.0.2||servicemeshoperator.v1.0.1
+servicemeshoperator|stable|servicemeshoperator.v1.0.1|30|1.0.1||servicemeshoperator.v1.0.0
+servicemeshoperator|stable|servicemeshoperator.v1.0.0|31|1.0.0||
+rhsso-operator|alpha|rhsso-operator.7.4.5|0|7.4.5||rhsso-operator.7.4.1
+rhsso-operator|alpha|rhsso-operator.7.4.1|1|7.4.1||rhsso-operator.7.4.0
+rhsso-operator|alpha|rhsso-operator.7.4.0|2|7.4.0||
+openshift-gitops-operator|preview|openshift-gitops-operator.v1.0.0|0|1.0.0||
+windows-machine-config-operator|preview|windows-machine-config-operator.v1.0.3|0|1.0.3||windows-machine-config-operator.v1.0.2
+windows-machine-config-operator|preview|windows-machine-config-operator.v1.0.2|1|1.0.2||
+windows-machine-config-operator|stable|windows-machine-config-operator.v1.0.3|0|1.0.3||windows-machine-config-operator.v1.0.2
+windows-machine-config-operator|stable|windows-machine-config-operator.v1.0.2|1|1.0.2||
+file-integrity-operator|4.6|file-integrity-operator.v0.1.11|0|0.1.11|>=0.1.6 <0.1.11|
+compliance-operator|4.6|compliance-operator.v0.1.26|0|0.1.26|>=0.1.17 <0.1.26|
+amq-broker|alpha|amq-broker-operator.v0.9.1|0|0.9.1||
+amq-broker|current|amq-broker-operator.v0.18.0|0|0.18.0||amq-broker-operator.v0.17.0
+amq-broker|current|amq-broker-operator.v0.17.0|1|0.17.0||amq-broker-operator.v0.15.0
+amq-broker|current|amq-broker-operator.v0.15.0|2|0.15.0||amq-broker-operator.v0.13.0
+amq-broker|current|amq-broker-operator.v0.13.0|3|0.13.0||amq-broker-operator.v0.9.1
+amq-broker|current|amq-broker-operator.v0.9.1|4|0.9.1||
+amq-broker|current-76|amq-broker-operator.v0.13.0|0|0.13.0||amq-broker-operator.v0.9.1
+amq-broker|current-76|amq-broker-operator.v0.9.1|1|0.9.1||
+amq-broker-lts|alpha|amq-broker-operator.v0.9.3|0|0.9.3||amq-broker-operator.v0.9.2
+amq-broker-lts|alpha|amq-broker-operator.v0.9.2|1|0.9.2||
+businessautomation-operator|stable|businessautomation-operator.7.10.0-1|0|7.10.0-1||businessautomation-operator.7.9.1-1
+businessautomation-operator|stable|businessautomation-operator.7.9.1-1|1|7.9.1-1||businessautomation-operator.7.9.0-2
+businessautomation-operator|stable|businessautomation-operator.7.9.0-2|2|7.9.0-2||businessautomation-operator.7.9.0
+businessautomation-operator|stable|businessautomation-operator.7.9.0|3|7.9.0||businessautomation-operator.7.8.1
+businessautomation-operator|stable|businessautomation-operator.7.8.1|4|7.8.1||businessautomation-operator.7.8.0
+businessautomation-operator|stable|businessautomation-operator.7.8.0|5|7.8.0||businessautomation-operator.1.4.1
+businessautomation-operator|stable|businessautomation-operator.1.4.1|6|1.4.1||businessautomation-operator.1.4.0
+businessautomation-operator|stable|businessautomation-operator.1.4.0|7|1.4.0||businessautomation-operator.1.3.0
+businessautomation-operator|stable|businessautomation-operator.1.3.0|8|1.3.0||businessautomation-operator.1.2.1
+businessautomation-operator|stable|businessautomation-operator.1.2.1|9|1.2.1||businessautomation-operator.1.2.0
+businessautomation-operator|stable|businessautomation-operator.1.2.0|10|1.2.0||

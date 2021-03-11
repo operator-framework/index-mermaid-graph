@@ -1,0 +1,23 @@
+flowchart LR
+  classDef head fill:#ffbfcf;
+  classDef installed fill:#34ebba;
+
+  subgraph amq-online
+    subgraph stable channel
+      amq-online.1.4.0-stable(1.4.0)
+      amq-online.1.4.1-stable(1.4.1) --> amq-online.1.4.0-stable(1.4.0)
+      amq-online.1.4.2-stable(1.4.2) --> amq-online.1.4.1-stable(1.4.1)
+      amq-online.1.4.4-stable(1.4.4) --> amq-online.1.4.2-stable(1.4.2)
+      amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.5.1-stable(1.5.1) --> amq-online.1.4.4-stable(1.4.4)
+      amq-online.1.5.1-stable(1.5.1) --> amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.5.2-stable(1.5.2) --> amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.5.2-stable(1.5.2) --> amq-online.1.5.1-stable(1.5.1)
+      amq-online.1.5.3-stable(1.5.3) --> amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.5.3-stable(1.5.3) --> amq-online.1.5.2-stable(1.5.2)
+      amq-online.1.6.1-stable(1.6.1) --> amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.6.1-stable(1.6.1) --> amq-online.1.5.3-stable(1.5.3)
+      amq-online.1.6.2-stable(1.6.2):::head --> amq-online.1.5.0-stable(1.5.0)
+      amq-online.1.6.2-stable(1.6.2):::head --> amq-online.1.6.1-stable(1.6.1)
+    end
+  end

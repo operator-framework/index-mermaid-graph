@@ -1,0 +1,15 @@
+{
+  "startOnLoad": true,
+  "maxTextSize": 1000000,
+  "flowchart": {
+    "useMaxWidth": false,
+    "htmlLabels": false
+  },
+  "sequence": {
+    "height": 40,
+    "actorMargin": 80,
+    "mirrorActors": false,
+    "bottomMarginAdj": 1
+  },
+  "theme": "default"
+}
