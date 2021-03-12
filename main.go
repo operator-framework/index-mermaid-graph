@@ -198,13 +198,13 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 					for _, skipReplace := range bundle.skipRangeReplaces.List() {
 						if !bundle.replaces.Has(skipReplace) {
 							if bundle.minDepth == 0 {
-								fmt.Fprintf(os.Stdout, "\n"+indent3+bundle.name+"-"+
-									channel+"("+bundle.version+"):::head"+" o--o | "+bundle.skipRange+" | "+
-									skipReplace+"-"+channel+"("+pkg.bundles[skipReplace].version+")")
+								fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
+									"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
+									bundle.name+"-"+channel+"("+bundle.version+"):::head")
 							} else {
-								fmt.Fprintf(os.Stdout, "\n"+indent3+bundle.name+"-"+
-									channel+"("+bundle.version+")"+" o--o | "+bundle.skipRange+" | "+
-									skipReplace+"-"+channel+"("+pkg.bundles[skipReplace].version+")")
+								fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
+									"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
+									bundle.name+"-"+channel+"("+bundle.version+")")
 							}
 						}
 					} // end bundle skipReplaces edge graphing
