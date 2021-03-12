@@ -8,7 +8,6 @@ import (
 	"strings"
 
 	"github.com/blang/semver/v4"
-	"github.com/goccy/go-graphviz/cgraph"
 	_ "github.com/mattn/go-sqlite3"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -222,64 +221,4 @@ func graphHeader() {
 	fmt.Fprintln(os.Stdout, "flowchart LR") // Flowchart left-right header
 	fmt.Fprintln(os.Stdout, indent1+"classDef head fill:#ffbfcf;")
 	fmt.Fprintln(os.Stdout, indent1+"classDef installed fill:#34ebba;")
-}
-
-func makeGraphDot(graph *cgraph.Graph, pkgs map[string]*pkg) error {
-	for _, p := range pkgs {
-		pGraph := graph.SubGraph(fmt.Sprintf("cluster_%s", p.name), 1)
-		pGraph.SetLabel(fmt.Sprintf("package: %s", p.name))
-
-		for _, b := range p.bundles {
-			nodeName := fmt.Sprintf("%s_%s", p.name, b.name)
-			node, err := pGraph.CreateNode(nodeName)
-			if err != nil {
-				return err
-			}
-			node.SetShape("record")
-			node.SetWidth(4)
-			node.SetLabel(fmt.Sprintf("{%s|{channels|{%s}}}", b.name, strings.Join(b.channels.List(), "|")))
-			if !b.isBundlePresent {
-				node.SetStyle(cgraph.DashedNodeStyle)
-			}
-			if b.minDepth == 0 {
-				node.SetPenWidth(4.0)
-			}
-		}
-
-		for _, pb := range p.bundles {
-			pName := fmt.Sprintf("%s_%s", p.name, pb.name)
-			parent, err := pGraph.Node(pName)
-			if err != nil {
-				return err
-			}
-			for _, cb := range pb.replaces.List() {
-				cName := fmt.Sprintf("%s_%s", p.name, cb)
-				child, err := pGraph.Node(cName)
-				if err != nil {
-					return err
-				}
-				edgeName := fmt.Sprintf("replaces_%s_%s", parent.Name(), child.Name())
-				if _, err := pGraph.CreateEdge(edgeName, parent, child); err != nil {
-					return err
-				}
-			}
-			for _, cb := range pb.skipRangeReplaces.List() {
-				cName := fmt.Sprintf("%s_%s", p.name, cb)
-				child, err := pGraph.Node(cName)
-				if err != nil {
-					return err
-				}
-
-				edgeName := fmt.Sprintf("skipRange_%s_%s", parent.Name(), child.Name())
-				if !pb.replaces.Has(cb) {
-					edge, err := pGraph.CreateEdge(edgeName, parent, child)
-					if err != nil {
-						return err
-					}
-					edge.SetStyle(cgraph.DashedEdgeStyle)
-				}
-			}
-		}
-	}
-	return nil
 }
