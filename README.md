@@ -10,8 +10,12 @@ Then:
 ```bash
 make run <ARGS=operator-package-name>
 ```
+For instance:
+```bash
+make run ARGS=amq-operator
+```
 
-Your Mermaid graph should open if `open` command opens PNG files on your host.
+Your Mermaid graph should open if `open` command opens the chosen graphic output type files (PNG, SVG, etc.) on your host.
 
 If not, image file saved as `/tmp/mermaid.mer.png`<br>
 Mermaid script file will be `./mermaid.mer`
