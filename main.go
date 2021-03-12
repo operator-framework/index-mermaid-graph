@@ -186,11 +186,13 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 					}
 					for _, replace := range bundle.replaces.List() {
 						if bundle.minDepth == 0 {
-							replaceSet.Insert(bundle.name + "-" + channel + "(" + bundle.version + "):::head" +
-								" --> " + replace + "-" + channel + "(" + pkg.bundles[replace].version + ")")
+							replaceSet.Insert(replace + "-" + channel + "(" +
+								pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
+								channel + "(" + bundle.version + "):::head")
 						} else {
-							replaceSet.Insert(bundle.name + "-" + channel + "(" + bundle.version + ")" +
-								" --> " + replace + "-" + channel + "(" + pkg.bundles[replace].version + ")")
+							replaceSet.Insert(replace + "-" + channel + "(" +
+								pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
+								channel + "(" + bundle.version + ")")
 						}
 					} // end bundle replaces edge graphing
 					for _, skipReplace := range bundle.skipRangeReplaces.List() {
