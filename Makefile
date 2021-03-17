@@ -2,6 +2,10 @@ PROG_NAME=olm-mermaid-graph
 #OUTPUT_TYPE=png # or pdf
 OUTPUT_TYPE=svg
 MERMAID_TEMP_SCRIPT=mermaid.mer
+#INDEX_DB_PATH_AND_NAME?=/Users/btofel/workspace/sample-operator/test-registry.db
+#INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.community-operators
+INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.redhat-operators
+
 .PHONY: all
 all: build
 
@@ -14,7 +18,8 @@ install:
 	go install
 
 run: build
-	sqlite3 -bail -init sqlite3.sql 2>/dev/null | bin/$(PROG_NAME) $(ARGS) 1>$(MERMAID_TEMP_SCRIPT)
+	sed 's+olm_catalog_indexes/index.db.4.6.redhat-operators+$(INDEX_DB_PATH_AND_NAME)+' sqlite3.sql > sqlite3_exec.sql
+	sqlite3 -bail -init sqlite3_exec.sql 2>/dev/null | bin/$(PROG_NAME) $(ARGS) 1>$(MERMAID_TEMP_SCRIPT)
 	docker pull minlag/mermaid-cli
 	docker run \
 		-v $(PWD)/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
