@@ -15,13 +15,14 @@ import (
 )
 
 type channelEntry struct {
-	packageName        string
-	channelName        string
-	bundleName         string
-	depth              int
-	bundleVersion      string
-	bundleSkipRange    string
-	replacesBundleName string
+	packageName            string
+	channelName            string
+	bundleName             string
+	depth                  int
+	bundleVersion          string
+	bundleSkipRange        string
+	replacesBundleName     string
+	headOperatorBundleName string
 }
 
 type pkg struct {
@@ -39,6 +40,7 @@ type bundle struct {
 	replaces          sets.String
 	skipRangeReplaces sets.String
 	isBundlePresent   bool
+	channelHeads      sets.String
 }
 
 var indent1 = "  "
@@ -88,6 +90,7 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 		chanEntry.bundleVersion = fields[4]
 		chanEntry.bundleSkipRange = fields[5]
 		chanEntry.replacesBundleName = fields[6]
+		chanEntry.headOperatorBundleName = fields[7]
 
 		if pkgToGraph != "" && chanEntry.packageName != pkgToGraph {
 			continue
@@ -110,6 +113,7 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 				packageName:       chanEntry.packageName,
 				minDepth:          chanEntry.depth,
 				isBundlePresent:   chanEntry.bundleVersion != "",
+				channelHeads:      sets.NewString(),
 				channels:          sets.NewString(),
 				replaces:          sets.NewString(),
 				skipRangeReplaces: sets.NewString(),
@@ -124,6 +128,7 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 				bundl.version = "x.y.z"
 			}
 		}
+		bundl.channelHeads.Insert(chanEntry.headOperatorBundleName + chanEntry.channelName)
 		p.bundles[chanEntry.bundleName] = bundl
 
 		bundl.channels.Insert(chanEntry.channelName)
@@ -178,14 +183,14 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 				if bundle.channels.Has(channel) {
 					// if no replaces edges, just write the node
 					if bundle.replaces.Len() == 0 && bundle.skipRangeReplaces.Len() == 0 {
-						if bundle.minDepth == 0 {
+						if bundle.channelHeads.Has(bundle.name + channel) {
 							replaceSet.Insert(bundle.name + "-" + channel + "(" + bundle.version + "):::head")
 						} else {
 							replaceSet.Insert(bundle.name + "-" + channel + "(" + bundle.version + ")")
 						}
 					}
 					for _, replace := range bundle.replaces.List() {
-						if bundle.minDepth == 0 {
+						if bundle.channelHeads.Has(bundle.name + channel) {
 							replaceSet.Insert(replace + "-" + channel + "(" +
 								pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
 								channel + "(" + bundle.version + "):::head")
@@ -196,17 +201,17 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 						}
 					} // end bundle replaces edge graphing
 					for _, skipReplace := range bundle.skipRangeReplaces.List() {
-						if !bundle.replaces.Has(skipReplace) {
-							if bundle.minDepth == 0 {
-								fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
-									"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
-									bundle.name+"-"+channel+"("+bundle.version+"):::head")
-							} else {
-								fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
-									"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
-									bundle.name+"-"+channel+"("+bundle.version+")")
-							}
+						//if !bundle.replaces.Has(skipReplace) {
+						if bundle.channelHeads.Has(bundle.name + channel) {
+							fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
+								"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
+								bundle.name+"-"+channel+"("+bundle.version+"):::head")
+						} else {
+							fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
+								"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
+								bundle.name+"-"+channel+"("+bundle.version+")")
 						}
+						//}
 					} // end bundle skipReplaces edge graphing
 				}
 			}

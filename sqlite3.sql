@@ -8,12 +8,15 @@ SELECT
 	e.depth,
 	b.version,
 	b.skipRange,
-	r.operatorbundle_name
+	r.operatorbundle_name,
+    c.head_operatorbundle_name
 FROM
 	channel_entry e
 LEFT JOIN
 	channel_entry r ON r.entry_id = e.replaces
 LEFT JOIN
-	operatorbundle b ON e.operatorbundle_name = b.name;
+	operatorbundle b ON e.operatorbundle_name = b.name
+LEFT JOIN
+    channel c ON e.package_name = c.package_name AND e.channel_name = c.name;
 -- `exit 1` suppresses sqlite output at end of execution and just quits
 .exit 1
