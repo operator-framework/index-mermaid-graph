@@ -179,6 +179,7 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 		for _, channel := range allBundleChannels.List() {
 			fmt.Fprintf(os.Stdout, "\n"+indent2+"subgraph "+channel+" channel") // per channel graph
 			replaceSet := sets.NewString()
+			skipRangeReplaceSet := sets.NewString()
 			for _, bundle := range pkg.bundles {
 				if bundle.channels.Has(channel) {
 					// if no replaces edges, just write the node
@@ -200,23 +201,25 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 								channel + "(" + bundle.version + ")")
 						}
 					} // end bundle replaces edge graphing
-					for _, skipReplace := range bundle.skipRangeReplaces.List() {
-						//if !bundle.replaces.Has(skipReplace) {
+					for _, skipRangeReplace := range bundle.skipRangeReplaces.List() {
 						if bundle.channelHeads.Has(bundle.name + channel) {
-							fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
-								"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
-								bundle.name+"-"+channel+"("+bundle.version+"):::head")
+							skipRangeReplaceSet.Insert(skipRangeReplace + "-" + channel +
+								"(" + pkg.bundles[skipRangeReplace].version + ")" + " o--o | " + bundle.skipRange + " | " +
+								bundle.name + "-" + channel + "(" + bundle.version + "):::head")
 						} else {
-							fmt.Fprintf(os.Stdout, "\n"+indent3+skipReplace+"-"+channel+
-								"("+pkg.bundles[skipReplace].version+")"+" o--o | "+bundle.skipRange+" | "+
-								bundle.name+"-"+channel+"("+bundle.version+")")
+							skipRangeReplaceSet.Insert(skipRangeReplace + "-" + channel +
+								"(" + pkg.bundles[skipRangeReplace].version + ")" + " o--o | " + bundle.skipRange + " | " +
+								bundle.name + "-" + channel + "(" + bundle.version + ")")
 						}
-						//}
 					} // end bundle skipReplaces edge graphing
 				}
 			}
+			// reconcile items that appear in both sets to decide which kind of edge to draw
 			for _, replaceLine := range replaceSet.List() {
 				fmt.Fprintf(os.Stdout, "\n"+indent3+replaceLine)
+			}
+			for _, skipRangeReplaceLine := range skipRangeReplaceSet.List() {
+				fmt.Fprintf(os.Stdout, "\n"+indent3+skipRangeReplaceLine)
 			}
 			fmt.Fprintf(os.Stdout, "\n"+indent2+"end") // end channel graph
 		} // end per channel loop
