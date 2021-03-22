@@ -21,13 +21,16 @@ type channelEntry struct {
 	depth                  int
 	bundleVersion          string
 	bundleSkipRange        string
+	bundleSkip             string
 	replacesBundleName     string
 	headOperatorBundleName string
+	defaultChannel         string
 }
 
 type pkg struct {
-	name    string
-	bundles map[string]*bundle
+	name           string
+	bundles        map[string]*bundle
+	defaultChannel string
 }
 
 type bundle struct {
@@ -38,6 +41,7 @@ type bundle struct {
 	minDepth          int
 	channels          sets.String
 	replaces          sets.String
+	skipReplaces      sets.String
 	skipRangeReplaces sets.String
 	isBundlePresent   bool
 	channelHeads      sets.String
@@ -89,8 +93,10 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 		chanEntry.depth, _ = strconv.Atoi(fields[3])
 		chanEntry.bundleVersion = fields[4]
 		chanEntry.bundleSkipRange = fields[5]
-		chanEntry.replacesBundleName = fields[6]
-		chanEntry.headOperatorBundleName = fields[7]
+		chanEntry.bundleSkip = fields[6]
+		chanEntry.replacesBundleName = fields[7]
+		chanEntry.headOperatorBundleName = fields[8]
+		chanEntry.defaultChannel = fields[9]
 
 		if pkgToGraph != "" && chanEntry.packageName != pkgToGraph {
 			continue
@@ -99,8 +105,9 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 		p, ok := pkgs[chanEntry.packageName]
 		if !ok {
 			p = &pkg{
-				name:    chanEntry.packageName,
-				bundles: make(map[string]*bundle),
+				name:           chanEntry.packageName,
+				bundles:        make(map[string]*bundle),
+				defaultChannel: chanEntry.defaultChannel,
 			}
 		}
 		pkgs[chanEntry.packageName] = p
@@ -116,10 +123,16 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 				channelHeads:      sets.NewString(),
 				channels:          sets.NewString(),
 				replaces:          sets.NewString(),
+				skipReplaces:      sets.NewString(),
 				skipRangeReplaces: sets.NewString(),
 			}
 			if chanEntry.bundleSkipRange != "" {
 				bundl.skipRange = chanEntry.bundleSkipRange
+			}
+			if chanEntry.bundleSkip != "" {
+				for _, skip := range strings.Split(chanEntry.bundleSkip, ",") {
+					bundl.skipReplaces.Insert(skip)
+				}
 			}
 			if chanEntry.bundleVersion != "" {
 				bundl.version = chanEntry.bundleVersion
@@ -177,7 +190,11 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 			allBundleChannels = bundle.channels.Union(allBundleChannels)
 		}
 		for _, channel := range allBundleChannels.List() {
-			fmt.Fprintf(os.Stdout, "\n"+indent2+"subgraph "+channel+" channel") // per channel graph
+			if channel == pkg.defaultChannel {
+				fmt.Fprintf(os.Stdout, "\n"+indent2+"subgraph "+channel+" channel - default")
+			} else {
+				fmt.Fprintf(os.Stdout, "\n"+indent2+"subgraph "+channel+" channel")
+			}
 			replaceSet := sets.NewString()
 			skipRangeReplaceSet := sets.NewString()
 			for _, bundle := range pkg.bundles {
