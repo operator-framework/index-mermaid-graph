@@ -14,6 +14,10 @@ For instance:
 ```bash
 make run ARGS=amq-operator
 ```
+or
+```bash
+INDEX_DB_PATH_AND_NAME=olm_catalog_indexes/index.db.4.7.redhat-operators make run ARGS=jaeger-product
+```
 
 Your Mermaid graph should open if `open` command opens the chosen graphic output type files (PNG, SVG, etc.) on your host.
 

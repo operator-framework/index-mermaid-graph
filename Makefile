@@ -6,6 +6,8 @@ MERMAID_TEMP_SCRIPT=mermaid.mer
 #INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.community-operators
 INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.redhat-operators
 
+detected_OS := $(shell uname 2>/dev/null || echo Unknown)
+
 .PHONY: all
 all: build
 
@@ -28,7 +30,9 @@ run: build
 		docker.io/minlag/mermaid-cli:latest \
 		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	echo "output $(OUTPUT_TYPE) file is /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)"
+ifeq ($(detected_OS),Darwin)
 	open /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
+endif
 
 .PHONY: clean
 clean:
