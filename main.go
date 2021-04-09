@@ -34,17 +34,17 @@ type pkg struct {
 }
 
 type bundle struct {
-	name              string
-	version           string
-	packageName       string
-	skipRange         string
-	minDepth          int
-	channels          sets.String
-	replaces          sets.String
-	skipReplaces      sets.String
-	skipRangeReplaces sets.String
-	isBundlePresent   bool
-	channelHeads      sets.String
+	name            string
+	version         string
+	packageName     string
+	skips           string
+	skipRange       string
+	minDepth        int
+	channels        sets.String
+	replaces        sets.String
+	skipRanges      sets.String
+	isBundlePresent bool
+	channelHeads    sets.String
 }
 
 var indent1 = "  "
@@ -116,23 +116,18 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 		bundl, ok := p.bundles[chanEntry.bundleName]
 		if !ok {
 			bundl = &bundle{
-				name:              chanEntry.bundleName,
-				packageName:       chanEntry.packageName,
-				minDepth:          chanEntry.depth,
-				isBundlePresent:   chanEntry.bundleVersion != "",
-				channelHeads:      sets.NewString(),
-				channels:          sets.NewString(),
-				replaces:          sets.NewString(),
-				skipReplaces:      sets.NewString(),
-				skipRangeReplaces: sets.NewString(),
+				name:            chanEntry.bundleName,
+				packageName:     chanEntry.packageName,
+				minDepth:        chanEntry.depth,
+				isBundlePresent: chanEntry.bundleVersion != "",
+				skips:           chanEntry.bundleSkip,
+				channelHeads:    sets.NewString(),
+				channels:        sets.NewString(),
+				replaces:        sets.NewString(),
+				skipRanges:      sets.NewString(),
 			}
 			if chanEntry.bundleSkipRange != "" {
 				bundl.skipRange = chanEntry.bundleSkipRange
-			}
-			if chanEntry.bundleSkip != "" {
-				for _, skip := range strings.Split(chanEntry.bundleSkip, ",") {
-					bundl.skipReplaces.Insert(skip)
-				}
 			}
 			if chanEntry.bundleVersion != "" {
 				bundl.version = chanEntry.bundleVersion
@@ -172,7 +167,7 @@ func loadPackages(pkgToGraph string) (map[string]*pkg, error) {
 					continue
 				}
 				if pSkipRange(cVersion) {
-					pb.skipRangeReplaces.Insert(cb.name)
+					pb.skipRanges.Insert(cb.name)
 				}
 			}
 		}
@@ -200,7 +195,7 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 			for _, bundle := range pkg.bundles {
 				if bundle.channels.Has(channel) {
 					// if no replaces edges, just write the node
-					if bundle.replaces.Len() == 0 && bundle.skipRangeReplaces.Len() == 0 {
+					if bundle.replaces.Len() == 0 && bundle.skipRanges.Len() == 0 {
 						if bundle.channelHeads.Has(bundle.name + channel) {
 							replaceSet.Insert(bundle.name + "-" + channel + "(" + bundle.version + "):::head")
 						} else {
@@ -208,17 +203,29 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 						}
 					}
 					for _, replace := range bundle.replaces.List() {
-						if bundle.channelHeads.Has(bundle.name + channel) {
-							replaceSet.Insert(replace + "-" + channel + "(" +
-								pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
-								channel + "(" + bundle.version + "):::head")
+						if bundle.skips == "" {
+							if bundle.channelHeads.Has(bundle.name + channel) {
+								replaceSet.Insert(replace + "-" + channel + "(" +
+									pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
+									channel + "(" + bundle.version + "):::head")
+							} else {
+								replaceSet.Insert(replace + "-" + channel + "(" +
+									pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
+									channel + "(" + bundle.version + ")")
+							}
 						} else {
-							replaceSet.Insert(replace + "-" + channel + "(" +
-								pkg.bundles[replace].version + ")" + " --> " + bundle.name + "-" +
-								channel + "(" + bundle.version + ")")
+							if bundle.channelHeads.Has(bundle.name + channel) {
+								replaceSet.Insert(replace + "-" + channel + "(" +
+									pkg.bundles[replace].version + ")" + " x--x | " + bundle.skips + " | " + bundle.name + "-" +
+									channel + "(" + bundle.version + "):::head")
+							} else {
+								replaceSet.Insert(replace + "-" + channel + "(" +
+									pkg.bundles[replace].version + ")" + " x--x | " + bundle.skips + " | " + bundle.name + "-" +
+									channel + "(" + bundle.version + ")")
+							}
 						}
 					} // end bundle replaces edge graphing
-					for _, skipRangeReplace := range bundle.skipRangeReplaces.List() {
+					for _, skipRangeReplace := range bundle.skipRanges.List() {
 						if bundle.channelHeads.Has(bundle.name + channel) {
 							skipRangeReplaceSet.Insert(skipRangeReplace + "-" + channel +
 								"(" + pkg.bundles[skipRangeReplace].version + ")" + " o--o | " + bundle.skipRange + " | " +
@@ -228,7 +235,7 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 								"(" + pkg.bundles[skipRangeReplace].version + ")" + " o--o | " + bundle.skipRange + " | " +
 								bundle.name + "-" + channel + "(" + bundle.version + ")")
 						}
-					} // end bundle skipReplaces edge graphing
+					} // end bundle skipRanges edge graphing
 				}
 			}
 			// reconcile items that appear in both sets to decide which kind of edge to draw
