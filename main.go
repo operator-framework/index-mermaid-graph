@@ -47,6 +47,7 @@ type bundle struct {
 	channelHeads    sets.String
 }
 
+// for pretty-printing Mermaid script
 var indent1 = "  "
 var indent2 = "    "
 var indent3 = "      "
