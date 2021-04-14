@@ -239,17 +239,24 @@ func outputMermaidScript(pkgs map[string]*pkg) {
 					} // end bundle skipRanges edge graphing
 				}
 			}
-			// reconcile items that appear in both sets to decide which kind of edge to draw
-			for _, replaceLine := range replaceSet.List() {
-				fmt.Fprintf(os.Stdout, "\n"+indent3+replaceLine)
-			}
-			for _, skipRangeReplaceLine := range skipRangeReplaceSet.List() {
-				fmt.Fprintf(os.Stdout, "\n"+indent3+skipRangeReplaceLine)
-			}
+			printReplaceLines(replaceSet)
+			printSkipRangeLines(skipRangeReplaceSet)
 			fmt.Fprintf(os.Stdout, "\n"+indent2+"end") // end channel graph
 		} // end per channel loop
 		fmt.Fprintf(os.Stdout, "\n"+indent1+"end") // end pkg graph
 	} // end package loop
+}
+
+func printSkipRangeLines(skipRangeReplaceSet sets.String) {
+	for _, skipRangeReplaceLine := range skipRangeReplaceSet.List() {
+		fmt.Fprintf(os.Stdout, "\n"+indent3+skipRangeReplaceLine)
+	}
+}
+
+func printReplaceLines(replaceSet sets.String) {
+	for _, replaceLine := range replaceSet.List() {
+		fmt.Fprintf(os.Stdout, "\n"+indent3+replaceLine)
+	}
 }
 
 func graphHeader() {
