@@ -1,7 +1,10 @@
 ## Output Mermaid graph script from Operator Lifecycle Manager indices
 
 ### Required:
-make, sqlite3, go v14+, container execution environment (such as Docker, podman)
+- make
+- sqlite3 
+- go v14+ 
+- container execution environment (such as Docker, podman)
 
 ### Usage
 Setting `INDEX_DB_PATH_AND_NAME` controls the file pointed to in `sqlite3.sql`, this controls what index gets graphed.
