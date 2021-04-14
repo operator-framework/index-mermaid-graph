@@ -2,6 +2,9 @@ PROG_NAME=olm-mermaid-graph
 #OUTPUT_TYPE=png # or pdf
 OUTPUT_TYPE=svg
 MERMAID_TEMP_SCRIPT=mermaid.mer
+
+# commented out versions show various options for defining this variable,
+#   including pointing it at an index file created for your operator locally (see README-local-package-graph.md)
 #INDEX_DB_PATH_AND_NAME?=/Users/btofel/workspace/sample-operator/test-registry.db
 #INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.community-operators
 INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.redhat-operators
