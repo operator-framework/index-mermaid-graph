@@ -30,7 +30,7 @@ run: build
 		-v $(PWD)/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
 		-v $(PWD)/config.json:/config.json \
 		-v /tmp:/tmp -it \
-		docker.io/minlag/mermaid-cli:latest \
+		docker.io/minlag/mermaid-cli:20210503120233a6e5e8 \
 		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	echo "output $(OUTPUT_TYPE) file is /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)"
 ifeq ($(detected_OS),Darwin)
