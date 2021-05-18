@@ -30,3 +30,16 @@ Mermaid script file will be `./mermaid.mer`
 ### Note
 - First time usage of `make run` may be slow due to download of Mermaid Docker image.
 - tweak the makefile if you need other file output types than SVG
+
+### Note about index freshening
+
+Turns out, if you're not logged into two Red Hat registries you will silently be redirected to other images for the redhat-redhat indexes
+This repo comes with some recent downloads of the indexes that have been pulled after logging into these registries.
+You may want to recreate this process with the following command as a template:
+```bash
+docker login https://registry.connect.redhat.com
+docker login registry.redhat.io
+docker rmi --force registry.redhat.io/redhat/redhat-operator-index:v4.8
+docker run --rm --entrypoint cat registry.redhat.io/redhat/redhat-operator-index:v4.8 /database/index.db > olm_catalog_indexes/index.db.4.8.redhat-operators
+```
+Running the above would get the true latest index for OpenShift 4.8.
