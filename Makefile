@@ -27,6 +27,7 @@ run: build
 	sqlite3 -bail -init sqlite3_exec.sql 2>/dev/null | bin/$(PROG_NAME) $(ARGS) 1>$(MERMAID_TEMP_SCRIPT)
 	docker pull minlag/mermaid-cli
 	docker run \
+		--user 10001:10001 \
 		-v $(PWD)/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
 		-v $(PWD)/config.json:/config.json \
 		-v /tmp:/tmp -it \
