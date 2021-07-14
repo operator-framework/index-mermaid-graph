@@ -28,14 +28,16 @@ run: build
 	cp $(PWD)/config.json /tmp/config.json
 	sqlite3 -bail -init sqlite3_exec.sql 2>/dev/null | bin/$(PROG_NAME) $(ARGS) 1>$(MERMAID_TEMP_SCRIPT)
 	cp $(PWD)/$(MERMAID_TEMP_SCRIPT) /tmp/$(MERMAID_TEMP_SCRIPT)
+	touch /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	$(CONTAINER_ENGINE) pull minlag/mermaid-cli
 	$(CONTAINER_ENGINE) run \
 		-v /tmp/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
+		-v /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE):/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE) \
 		-v /tmp/config.json:/config.json \
 		-v /tmp:/app/.cache/yarn \
 		-it \
 		docker.io/minlag/mermaid-cli:latest \
-		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
+		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	echo "output $(OUTPUT_TYPE) file is /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)"
 ifeq ($(detected_OS),Darwin)
 	open /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
