@@ -9,7 +9,14 @@
 ### Usage
 Setting `INDEX_DB_PATH_AND_NAME` controls the file pointed to in `sqlite3.sql`, this controls what index gets graphed.
 
-Without setting `INDEX_DB_PATH_AND_NAME` just using the 4.6 index for Red Hat operators:
+To get, possibly, more recent images:
+```bash
+INDEX_DB_PATH_AND_NAME=olm_catalog_indexes/index.db.4.7.redhat-operators
+IMAGE=registry.redhat.io/redhat/redhat-operator-index:v4.7 
+make get-index
+```
+
+Without setting `INDEX_DB_PATH_AND_NAME` just using the 4.7 index for Red Hat operators:
 ```bash
 make run <ARGS=operator-package-name>
 ```

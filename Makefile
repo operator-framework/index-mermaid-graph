@@ -3,12 +3,13 @@ PROG_NAME=olm-mermaid-graph
 OUTPUT_TYPE=svg
 MERMAID_TEMP_SCRIPT=mermaid.mer
 CONTAINER_ENGINE?=docker
+IMAGE?=registry.redhat.io/redhat/redhat-operator-index:v4.7
 
 # commented out versions show various options for defining this variable,
 #   including pointing it at an index file created for your operator locally (see README-local-package-graph.md)
 #INDEX_DB_PATH_AND_NAME?=/Users/btofel/workspace/sample-operator/test-registry.db
 #INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.community-operators
-INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.6.redhat-operators
+INDEX_DB_PATH_AND_NAME?=olm_catalog_indexes/index.db.4.7.redhat-operators
 
 detected_OS := $(shell uname 2>/dev/null || echo Unknown)
 
@@ -22,6 +23,12 @@ build:
 .PHONY: install
 install:
 	go install
+
+get-index:
+	docker login registry.redhat.io && \
+	docker rmi $(IMAGE) | true
+	docker run --rm --entrypoint cat $(IMAGE) /database/index.db > \
+	$(INDEX_DB_PATH_AND_NAME)
 
 run: build
 	sed 's+olm_catalog_indexes/index.db.4.6.redhat-operators+$(INDEX_DB_PATH_AND_NAME)+' sqlite3.sql > sqlite3_exec.sql
