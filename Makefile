@@ -37,7 +37,7 @@ run: build
 	cp $(PWD)/$(MERMAID_TEMP_SCRIPT) /tmp/$(MERMAID_TEMP_SCRIPT)
 	touch /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	chmod o+w /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
-	$(CONTAINER_ENGINE) pull minlag/mermaid-cli
+	$(CONTAINER_ENGINE) pull docker.io/minlag/mermaid-cli:latest
 	$(CONTAINER_ENGINE) run \
 		--privileged \
 		-v /tmp/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
