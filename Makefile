@@ -49,7 +49,7 @@ run: build
 	cp $(PWD)/$(MERMAID_TEMP_SCRIPT) /tmp/$(MERMAID_TEMP_SCRIPT)
 	touch /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	chmod o+w /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
-	$(CONTAINER_ENGINE) pull docker.io/minlag/mermaid-cli
+	$(CONTAINER_ENGINE) pull minlag/mermaid-cli:20210503120233a6e5e8
 	$(CONTAINER_ENGINE) run \
 		--privileged \
 		-v /tmp/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
@@ -57,7 +57,7 @@ run: build
 		-v /tmp/config.json:/config.json \
 		-v /tmp:/app/.cache/yarn \
 		-it \
-		docker.io/minlag/mermaid-cli:latest \
+		docker.io/minlag/mermaid-cli:20210503120233a6e5e8 \
 		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	echo "output $(OUTPUT_TYPE) file is /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)"
 ifeq ($(detected_OS),Darwin)
