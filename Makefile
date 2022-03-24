@@ -2,6 +2,8 @@ PROG_NAME=olm-mermaid-graph
 #OUTPUT_TYPE=png # or pdf
 OUTPUT_TYPE=svg
 MERMAID_TEMP_SCRIPT=mermaid.mer
+#TODO: this can go back to `latest` tag once https://github.com/mermaid-js/mermaid-cli/issues/266 is fixed
+MERMAID_IMAGE=docker.io/minlag/mermaid-cli:20210503120233a6e5e8
 CONTAINER_ENGINE?=docker
 IMAGE?=registry.redhat.io/redhat/redhat-operator-index:v4.7
 
@@ -49,7 +51,7 @@ run: build
 	cp $(PWD)/$(MERMAID_TEMP_SCRIPT) /tmp/$(MERMAID_TEMP_SCRIPT)
 	touch /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	chmod o+w /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
-	$(CONTAINER_ENGINE) pull minlag/mermaid-cli:20210503120233a6e5e8
+	$(CONTAINER_ENGINE) pull $(MERMAID_IMAGE)
 	$(CONTAINER_ENGINE) run \
 		--privileged \
 		-v /tmp/$(MERMAID_TEMP_SCRIPT):/$(MERMAID_TEMP_SCRIPT) \
@@ -57,7 +59,7 @@ run: build
 		-v /tmp/config.json:/config.json \
 		-v /tmp:/app/.cache/yarn \
 		-it \
-		docker.io/minlag/mermaid-cli:20210503120233a6e5e8 \
+		$(MERMAID_IMAGE) \
 		-c /config.json -i /$(MERMAID_TEMP_SCRIPT) -o /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)
 	echo "output $(OUTPUT_TYPE) file is /tmp/$(MERMAID_TEMP_SCRIPT).$(OUTPUT_TYPE)"
 ifeq ($(detected_OS),Darwin)
