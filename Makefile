@@ -2,8 +2,8 @@ PROG_NAME=olm-mermaid-graph
 #OUTPUT_TYPE=png # or pdf
 OUTPUT_TYPE=svg
 MERMAID_TEMP_SCRIPT=mermaid.mer
-#TODO: this can go back to `latest` tag once https://github.com/mermaid-js/mermaid-cli/issues/266 is fixed
-MERMAID_IMAGE=docker.io/minlag/mermaid-cli:20210503120233a6e5e8
+#TODO: added a workaround (htmlabels: true in config.json) to allow `latest` tag until https://github.com/mermaid-js/mermaid-cli/issues/266 is fixed
+MERMAID_IMAGE=docker.io/minlag/mermaid-cli:latest
 CONTAINER_ENGINE?=docker
 IMAGE?=registry.redhat.io/redhat/redhat-operator-index:v4.7
 
